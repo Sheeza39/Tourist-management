@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attractions</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tourist Attractions</h1>
+    </header>
+    <main>
+        <h2>Attractions List</h2>
+        <ul>
+            <% attractions.forEach(function(attraction) { %>
+                <li>
+                    <h3><%= attraction.name %></h3>
+                    <p>Location: <%= attraction.location %></p>
+                    <p>Entry Fee: $<%= attraction.entryFee %></p>
+                    <p>Rating: <%= attraction.rating %> / 5</p>
+                </li>
+            <% }) %>
+        </ul>
+    </main>
+    <footer>
+        <p>© 2024 Tourist Management System</p>
+    </footer>
+</body>
+</html>

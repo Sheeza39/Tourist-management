@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Rated Attractions</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Top Rated Attractions</h1>
+    </header>
+    <main>
+        <h2>Top 5 Attractions</h2>
+        <ul>
+            <% topRatedAttractions.forEach(function(attraction) { %>
+                <li>
+                    <h3><%= attraction.name %></h3>
+                    <p>Location: <%= attraction.location %></p>
+                    <p>Rating: <%= attraction.rating %> / 5</p>
+                </li>
+            <% }) %>
+        </ul>
+    </main>
+    <footer>
+        <p>© 2024 Tourist Management System</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Activity</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Visitor Activity</h1>
+    </header>
+    <main>
+        <h2>Visitor Activity</h2>
+        <ul>
+            <% visitors.forEach(function(visitor) { %>
+                <li>
+                    <h3><%= visitor.name %></h3>
+                    <p>Email: <%= visitor.email %></p>
+                    <p>Reviewed Attractions: <%= visitor.reviewCount %></p>
+                </li>
+            <% }) %>
+        </ul>
+    </main>
+    <footer>
+        <p>© 2024 Tourist Management System</p>
+    </footer>
+</body>
+</html>
